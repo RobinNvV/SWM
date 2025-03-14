@@ -1,0 +1,10 @@
+.collapsible-content{
+  overflow: hidden;
+  max-height: 0px;
+  transition: max-height 0.2s ease-out;
+}
+
+.collapsible-header{
+  cursor: pointer;
+}
+

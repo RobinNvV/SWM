@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>
+      Equipment
+    </title>
+    <link rel="stylesheet" href="styles/shared/general.css">
+    <link rel="stylesheet" href="styles/equipmentlist.css">
+    <link rel="stylesheet" href="styles/shared/header.css">
+    <link rel="stylesheet" href="styles/shared/sidebar.css">
+    <link rel="stylesheet" href="styles/shared/collapsible.css">
+    <script src="scripts/mapresizer.min.js"> </script>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.3.0/papaparse.min.js"></script>
+
+
+
+  </head>
+
+  <body>
+    <div class="div-header">
+    </div>
+
+    <div class="div-sidebar">
+    </div>
+
+
+    <div class="div-equipment-grid js-equipment-grid">
+      
+      <img src="Images/EquipmentPosterPNG3.png" width="100%"  usemap="#image_map">
+      <map name="image_map">
+        <area target="_self" alt="Boreas" title="Boreas" href="main.html?contentId=201" coords="148,1010,1154,1010,1154,1415,1393,1415,1393,1679,1163,1688,1163,1858,139,1871" shape="poly">
+        <area target="_self" alt="Stornes" title="Stornes" href="main.html?contentId=202" coords="2161,1022,1180,732" shape="rect">
+        <area target="_self" alt="Nordnes" title="Nordnes" href="main.html?contentId=204" coords="2195,737,3065,1022" shape="rect">
+        <area target="_self" alt="Bravenes" title="Bravenes" href="main.html?contentId=208" coords="3138,741,4046,1027" shape="rect">
+        <area target="_self" alt="HAM 602" title="HAM602" href="main.html?contentId=200" coords="4097,856,4618,1031" shape="rect">
+        <area target="_self" alt="Stingray" title="Stingray" href="main.html?contentId=203" coords="1176,1039,2165,1039,2165,1283,1398,1291,1398,1376,1180,1376" shape="poly">
+        <area target="_self" alt="Calypso" title="Calypso" href="main.html?contentId=206" coords="2187,1044,2865,1295" shape="rect">
+        <area target="_self" alt="Nexus" title="Nexus" href="main.html?contentId=200" coords="2886,1039,3547,1295" shape="rect">
+        <area target="_self" alt="Dit-It" title="Dit-It" href="main.html?contentId=200" coords="3585,1150,3752,1300" shape="rect">
+        <area target="_self" alt="Deep Dig-It" title="Deep-Dig It" href="main.html?contentId=200" coords="3765,1150,3931,1300" shape="rect">
+        <area target="_self" alt="Jet-It" title="Jet-It" href="main.html?contentId=200" coords="3944,1150,4072,1300" shape="rect">
+        <area target="_self" alt="Aeolus" title="Aeolus" href="main.html?contentId=205" coords="1457,1304,2161,1300,2165,1466,2532,1474,2532,1679,2268,1679,2268,1863,1329,1867,1334,1696,1453,1692" shape="poly">
+        <area target="_self" alt="MPI Adventure" title="MPI Adventrue" href="main.html?contentId=207" coords="2545,1511,3270,1511,3274,1870,2438,1870,2438,1733,2545,1733" shape="poly">
+        <area target="_self" alt="MPI Resolution" title="MPI Resolution" href="main.html?contentId=200" coords="3287,1503,4020,1870" shape="rect">
+        <area target="_self" alt="Svanen" title="Svanen" href="main.html?contentId=200" coords="4136,1140,4639,1136,4639,1870,4033,1870,4033,1691,4136,1691" shape="poly">
+        <area target="_self" alt="HAM 318" title="HAM 318" href="main.html?contentId=200" coords="242,1985,1483,1985,1487,2288,1095,2292,425,2586,242,2586" shape="poly">
+        <area target="_self" alt="Vox Maxima" title="Vox Maxima" href="main.html?contentId=200" coords="1547,1981,2681,1989,2673,2279,2417,2279,2080,2522,1999,2522,1995,2305,1547,2301" shape="poly">
+        <area target="_self" alt="Rotterdam" title="Rotterdam" href="main.html?contentId=200" coords="2732,1989,2732,2296,3133,2305,3142,2484,3236,2484,3440,2296,3692,2296,3692,1998" shape="poly">
+        <area target="_self" alt="Volvox Terranova" title="Volvox Terranova" href="main.html?contentId=200" coords="3722,1998,3730,2313,4136,2313,4140,2458,4208,2458,4413,2292,4673,2292,4669,2002" shape="poly">
+        <area target="_self" alt="Vox Amalia" title="Vox Amalia" href="main.html?contentId=200" coords="638,2505,1479,2497,1474,2714,1189,2719,877,2834,877,2740,634,2740" shape="poly">
+        <area target="_self" alt="Utrecht" title="Utrecht" href="main.html?contentId=200" coords="1534,2480,1769,2480,1769,2544,2383,2548,2383,2701,2178,2706,1973,2885,1858,2885,1862,2740,1530,2744" shape="poly">
+        <area target="_self" alt="Volvox Asia" title="Volvox Asia" href="main.html?contentId=200" coords="3031,2475,3031,2539,3138,2539,3138,2736,2656,2740,2570,2817,2408,2821,2408,2475" shape="poly">
+        <area target="_self" alt="HAM 316" title="HAM 316" href="main.html?contentId=200" coords="3210,2492,3944,2484,3944,2723,3560,2723,3385,2889,3210,2889" shape="poly">
+        <area target="_self" alt="Vox Ariane" title="Vox Ariane" href="main.html?contentId=200" coords="233,2795,446,2795,446,2881,992,2876,988,3060,805,3064,502,3218,421,3222,421,3102,237,3107" shape="poly">
+        <area target="_self" alt="Vox Apalonia" title="Vox Apalonia" href="main.html?contentId=200" coords="1086,2825,1287,2825,1287,2893,1803,2893,1803,3055,1619,3055,1351,3218,1282,3222,1282,3090,1086,3090" shape="poly">
+        <area target="_self" alt="Vox Alexia" title="Vox Alexia" href="main.html?contentId=200" coords="1867,2893,2583,2893,2579,3064,2400,3064,2105,3218,2033,3218,2033,3090,1862,3090" shape="poly">
+        <area target="_self" alt="Volvox Olympia" title="Volvox Olympia" href="main.html?contentId=200" coords="233,3264,583,3260,583,3192,788,3192,788,3439,485,3435,395,3537,318,3537,318,3422,233,3422" shape="poly">
+        <area target="_self" alt="HAM 317" title="HAM 317" href="main.html?contentId=200" coords="852,3269,1218,3264,1231,3196,1274,3196,1274,3256,1415,3256,1410,3405,1142,3410,1016,3526,948,3526,950,3431,847,3431" shape="poly">
+        <area target="_self" alt="Volvox Atalanta" title="Volvox Atalanta" href="main.html?contentId=200" coords="1479,3243,1483,3410,1564,3410,1564,3503,1611,3503,1713,3435,2007,3431,2007,3243,1901,3243,1901,3218,1828,3218,1828,3243" shape="poly">
+        <area target="_self" alt="HAM 311" title="HAM 311" href="main.html?contentId=200" coords="2080,3269,2076,3435,2148,3435,2144,3516,2221,3516,2297,3439,2583,3444,2587,3201,2425,3201,2425,3269" shape="poly">
+        <area target="_self" alt="Costa La Luz" title="Costa La Luz" href="main.html?contentId=200" coords="2622,3260,2626,3439,2681,3439,2681,3516,2741,3516,2826,3435,3108,3435,3116,3192,2963,3192,2963,3260" shape="poly">
+        <area target="_self" alt="Costa Atlantica" title="Costa Atlantica" href="main.html?contentId=200" coords="3189,3209,3189,3435,3338,3435,3338,3486,3406,3486,3543,3405,3666,3405,3671,3277,3376,3273,3381,3209" shape="poly">
+        <area target="_self" alt="Athena" title="Athena" href="main.html?contentId=200" coords="148,3657,852,4045" shape="rect">
+        <area target="_self" alt="Artemis" title="Artemis" href="main.html?contentId=200" coords="873,3657,1572,4045" shape="rect">
+        <area target="_self" alt="HAM 218" title="HAM 218" href="main.html?contentId=200" coords="1598,3729,2140,4049" shape="rect">
+        <area target="_self" alt="Hector" title="Hector" href="main.html?contentId=200" coords="2152,3729,2698,4054" shape="rect">
+        <area target="_self" alt="Noordzee" title="Noordzee" href="main.html?contentId=200" coords="2720,3729,3210,4054" shape="rect">
+        <area target="_self" alt="Biesbosch" title="Biesbosch" href="main.html?contentId=200" coords="3223,3751,3637,4054" shape="rect">
+        <area target="_self" alt="Mangystau" title="Mangystau" href="main.html?contentId=200" coords="3696,3758,4148,4048" shape="rect">
+        <area target="_self" alt="Ural River" title="Ural River" href="main.html?contentId=200" coords="4174,3754,4605,4048" shape="rect">
+        <area target="_self" alt="Kingfisher" title="Kingfisher" href="main.html?contentId=200" coords="199,4261,459,4487" shape="rect">
+        <area target="_self" alt="Buzzard" title="Buzzard" href="main.html?contentId=200ard" coords="485,4265,711,4491" shape="rect">
+        <area target="_self" alt="Blackbird" title="BlackBird" href="main.html?contentId=200kbird" coords="749,4265,992,4491" shape="rect">
+        <area target="_self" alt="Sand Carrier 103" title="Sand Carrier 103" href="main.html?contentId=200" coords="1133,4267,1871,4493" shape="rect">
+        <area target="_self" alt="Sand Carrier 104" title="Sand Carrier 104" href="main.html?contentId=200" coords="1884,4267,2596,4493" shape="rect">
+        <area target="_self" alt="Sand Carrier 105" title="Sand Carrier 105" href="main.html?contentId=200" coords="2617,4258,3330,4497" shape="rect">
+        <area target="_self" alt="Sand Carrier 106" title="Sand Carrier 106" href="main.html?contentId=200" coords="3381,4258,4102,4501" shape="rect">
+        <area target="_self" alt="Simson" title="Simson" href="main.html?contentId=200" coords="173,4573,626,4875" shape="rect">
+        <area target="_self" alt="Goliath" title="Goliath" href="main.html?contentId=200" coords="643,4568,1112,4875" shape="rect">
+        <area target="_self" alt="Razende Bol" title="Razende Bol" href="main.html?contentId=200" coords="1142,4564,1641,4871" shape="rect">
+        <area target="_self" alt="Titan" title="Titan" href="main.html?contentId=200" coords="1666,4534,2204,4875" shape="rect">
+        <area target="_self" alt="Oceanus" title="Oceanus" href="main.html?contentId=200" coords="2297,4652,2528,4823" shape="rect">
+        <area target="_self" alt="Cronus" title="Cronus" href="main.html?contentId=200" coords="2545,4652,2741,4827" shape="rect">
+        <area target="_self" alt="Jan Blanken" title="Jan Blanken" href="main.html?contentId=200" coords="191,4912,753,5100" shape="rect">
+        <area target="_self" alt="Jan Leeghwater" title="Jan Leeghwater" href="main.html?contentId=200" coords="796,4904,1368,5109" shape="rect">
+        <area target="_self" alt="Pieter Caland" title="Pieter Caland" href="main.html?contentId=200" coords="1415,4904,1943,5109" shape="rect">
+        <area target="_self" alt="Cornelis Lely" title="Cornelis Lely" href="main.html?contentId=200" coords="2024,4900,2562,5109" shape="rect">
+        <area target="_self" alt="Johannis de Rijke" title="Johannis de Rijke" href="main.html?contentId=200" coords="2613,4891,3018,5109" shape="rect">
+        <area target="_self" alt="Maas" title="Maas" href="main.html?contentId=200" coords="165,5160,540,5347" shape="rect">
+        <area target="_self" alt="Mersey" title="Mersey" href="main.html?contentId=200" coords="583,5170,890,5362" shape="rect">
+        <area target="_self" alt="Rijn" title="Rijn" href="main.html?contentId=200" coords="907,5168,1240,5364" shape="rect">
+        <area target="_self" alt="Rhone" title="Rhone" href="main.html?contentId=200" coords="1265,5171,1598,5367" shape="rect">
+        <area target="_self" alt="Iguazu" title="Iguazu" href="main.html?contentId=200" coords="1624,5167,1969,5367" shape="rect">
+        <area target="_self" alt="Sagar Manthan" title="Sagar Manthan" href="main.html?contentId=200" coords="1990,5164,2297,5364" shape="rect">
+        <area target="_self" alt="Antereja" title="Antereja" href="main.html?contentId=200" coords="2323,5168,2639,5364" shape="rect">
+        <area target="_self" alt="Njord" title="Njord" href="main.html?contentId=200" coords="2690,5174,2920,5366" shape="rect">
+        <area target="_self" alt="Jetsed" title="Jetsed" href="main.html?contentId=200" coords="2959,5185,3193,5369" shape="rect">
+        <area target="_self" alt="Drago Rio Madeira" title="Drago Rio Madeira" href="main.html?contentId=200" coords="3253,5194,3611,5364" shape="rect">
+        <area target="_self" alt="Wodan" title="Wodan" href="main.html?contentId=200" coords="3628,5194,3854,5364" shape="rect">
+        <area target="_self" alt="Odin" title="Odin" href="main.html?contentId=200" coords="3922,5194,4093,5364" shape="rect">
+        <area target="_self" alt="Borr" title="Borr" href="main.html?contentId=200" coords="4106,5198,4259,5364" shape="rect">
+        <area target="_self" alt="Baldr" title="Baldr" href="main.html?contentId=200" coords="4272,5194,4404,5364" shape="rect">
+    </map>
+
+    </div>
+    
+
+    <!-- Load Header before Sidebar -->
+    <script type="module" src="scripts/header.js"></script>
+    <script type="module" src="scripts/sidebar.js"></script>
+
+    <script type="module" src="scripts/equipmentlist.js"></script>
+
+    <script type="module" src="scripts/collapsible.js"></script>
+    <script type="module" src="scripts/search.js"></script>
+
+    <script type="module" src="scripts/interpagenav.js"></script>
+
+
+
+  </body>
+</html>

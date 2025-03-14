@@ -1,0 +1,4 @@
+.div-equipment-grid {
+  height: calc(100vh - 96px - 24px);
+  overflow: scroll;
+}

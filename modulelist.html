@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>
+      How to Build This?
+    </title>
+    <link rel="stylesheet" href="styles/shared/general.css">
+    <link rel="stylesheet" href="styles/modulepreview.css">
+    <link rel="stylesheet" href="styles/shared/header.css">
+    <link rel="stylesheet" href="styles/shared/sidebar.css">
+    <link rel="stylesheet" href="styles/shared/collapsible.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.3.0/papaparse.min.js"></script>
+
+
+  </head>
+
+  <body>
+    <div class="div-header">
+    </div>
+
+    <div class="div-sidebar">
+    </div>
+
+    <div id="div-module-grid" class="js-module-grid">
+    </div>
+  
+
+    <!-- Load Header before Sidebar -->
+    <script type="module" src="scripts/header.js"></script>
+    <script type="module" src="scripts/sidebar.js"></script>
+
+    <script type="module" src="scripts/modulelist.js"></script>
+
+
+    <script type="module" src="scripts/collapsible.js"></script>
+    <script type="module" src="scripts/search.js"></script>
+
+    <script type="module" src="scripts/interpagenav.js"></script>
+
+    
+
+
+  </body>
+</html>

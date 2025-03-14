@@ -1,0 +1,167 @@
+#search-bar {
+  font-size: 16px;
+  flex:1;
+  height:36px;
+  padding-left:10px;
+  border-style: solid;
+  border-color: gray;
+  border-radius:1px;
+  border-width: 1px;
+  box-shadow: inset 1px 2px 5px rgba(0,0,0,0.05);
+}
+
+/* Img Styles */
+.hamburger-menu {
+  position: fixed;
+  right: 0px;
+  height:30px;
+  cursor: pointer;
+
+  z-index: 10;
+
+}
+
+.hamburger-menu:hover {
+  background-color: lightgrey;
+  border-radius: 15px;
+}
+
+.div-menu-icon {
+  width: fit-content;
+  height: auto;
+  cursor: pointer;
+  margin: 30px;
+  border-radius:4px;
+  background: white;
+}
+
+.line1, .line2, .line3{
+  width: 40px;
+  height: 4px;
+  margin: 10px 8px;
+  background-color: black;
+  border-radius: 50px;
+  transition: 0.2s;
+}
+
+.active .line1{
+  transform: translate(0px, 15px)rotate(45deg);
+}
+
+.active .line2{
+  opacity: 0;
+}
+
+.active .line3{
+  transform: translate(0px, -15px)rotate(-45deg);
+}
+
+.search-button {
+  height: 40px;
+  width: 60px;
+  margin-left: -1px;
+}
+
+.search-icon {
+  height:25px;
+  margin-top: 4px;
+}
+
+
+.VOLogo {
+  width: 100%;
+  height: 100%;
+  object-fit:contain;
+}
+
+/* Div Styles */
+.div-header{
+  height: 110px;
+
+  /* display: flex;s
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding-top:10px;
+  padding-bottom:10px; */
+
+  /* border-bottom-width:1px;
+  border-bottom-style:solid;
+  border-bottom-color:rgb(81, 84, 84);
+  color:white; */
+
+  /* background-color: blue; */
+
+  position: fixed;
+  top:0;
+  left:0;
+  right:0;
+
+  transition: all ease-in-out 300ms;
+  -webkit-transition: all ease-in-out 300ms;
+  color: white;
+}
+.div-top-header{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding-top:10px;
+  padding-bottom:10px;
+
+  height: 55px;
+
+  background-color: rgb(37, 58, 121);
+
+}
+
+.div-bottom-header{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding-top:10px;
+  padding-bottom:10px;
+  color:black;
+
+  background-color: white;
+  box-shadow: 0px 10px 10px -10px black;
+  /* border-color: black; */
+  /* border-style:solid; */
+  height:15px;
+
+}
+
+.div-header-left{
+  display: flex;
+  align-items: center;
+}
+
+.div-header-left h1{
+  font-size: 1.5em;
+}
+
+.div-header-center{
+  flex:1;
+  margin-left: 35px;
+  margin-right: 35px;
+  max-width: 500px;
+  display: flex;
+  align-items: center;
+}
+
+
+.div-header-right{
+  display:flex;
+  width: 200px;
+  margin-right: 30px;
+
+}
+
+.div-header .VOLogo{
+  background-color: white;
+}
+
+#breadcrumb {
+  padding: 0 24px
+}

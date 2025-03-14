@@ -1,0 +1,62 @@
+#div-main-container{
+  display: grid;
+  grid-template-rows: 100px 1fr;
+  row-gap: 20px;
+  height: calc(100vh - 96px - 24px);
+}
+
+/* #div-flow-container{
+  background-color: pink;
+} */
+
+#content-container{
+  overflow: auto;
+  /* padding: 0px 10px; */
+}
+
+#div-link-boxes{
+  display:flex;
+  justify-content: space-between;
+  /* background: lightgreen; */
+
+
+  /* grid-template-columns: 1 1 1; */
+}
+
+
+.nav-coll .collapsible-header{
+  display:flex;
+  align-items: center;
+}
+
+.nav-coll .collapsible-header:after{
+  content: "\11206";
+  font-size: 13px;
+  color: white;
+  margin-left: auto;
+}
+
+#div-main-container{
+  padding: 0px 10px;
+}
+
+#content-container{
+  height:100%;
+}
+
+#div-GMS {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+#div-GMS h2 {
+  flex: 0 0 auto; /* Keeps the header at its predetermined size */
+}
+
+#div-GMS object {
+  flex: 1 1 auto; /* Allows the object to fill the remaining space */
+  padding: 0 40px;
+  width: 92%;
+  display: block;
+}
