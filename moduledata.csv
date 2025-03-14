@@ -567,7 +567,6 @@ contentId,pageType,templateId,objectId,Nr,name,link
 305,3,1,12,5,Aeolus,main.html?contentId=205
 305,3,1,12,5,Calypso,main.html?contentId=206
 305,3,1,12,5,MPI Adventure,main.html?contentId=207
-############################################ Pagetype 4 (Services)
 401,4,2,1,1,E&E Services, 
 401,4,2,11,1,expert1,https://expert1.com
 401,4,2,11,2,expert2,https://expert2.com
