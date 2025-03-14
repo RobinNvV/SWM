@@ -1,5 +1,4 @@
 contentId,pageType,templateId,objectId,Nr,name,link
-################################################## Pagetype1 (ProjectModules)
 101,1,1,1,1,How to Build a Windpark?, 
 101,1,1,3,1,Capital Dredging,main.html?contentId=301
 101,1,1,3,2,Discharging Dredging,main.html?contentId=302
@@ -190,7 +189,115 @@ contentId,pageType,templateId,objectId,Nr,name,link
 105,1,2,10,3,finalreport3,https://finalreport3.com
 105,1,2,10,4,finalreport4,https://finalreport4.com
 105,1,2,10,5,finalreport5,https://finalreport5.com
-########################################### Pagetype2 (Equipment)
+
+106,1,1,1,1,PlaceHolder, 
+106,1,1,3,1,Capital Dredging,main.html?contentId=301
+106,1,1,4,1,E&E Services,main.html?contentId=401
+106,1,1,11,1,expert1,https://expert1.com
+106,1,1,6,1,mainpdf,PlaceHolders/Placeholderpdf.pdf
+106,1,1,7,1,lessonlearned1,https://lessonlearned1.com
+106,1,1,8,1,project1,https://project1.com
+106,1,1,9,1,quickguide1,https://quickguide1.com
+106,1,1,10,1,finalreport1,https://finalreport1.com
+107,1,1,1,1,PlaceHolder, 
+107,1,1,3,1,Capital Dredging,main.html?contentId=301
+107,1,1,4,1,E&E Services,main.html?contentId=401
+107,1,1,11,1,expert1,https://expert1.com
+107,1,1,6,1,mainpdf,PlaceHolders/Placeholderpdf.pdf
+107,1,1,7,1,lessonlearned1,https://lessonlearned1.com
+107,1,1,8,1,project1,https://project1.com
+107,1,1,9,1,quickguide1,https://quickguide1.com
+107,1,1,10,1,finalreport1,https://finalreport1.com
+108,1,1,1,1,PlaceHolder, 
+108,1,1,3,1,Capital Dredging,main.html?contentId=301
+108,1,1,4,1,E&E Services,main.html?contentId=401
+108,1,1,11,1,expert1,https://expert1.com
+108,1,1,6,1,mainpdf,PlaceHolders/Placeholderpdf.pdf
+108,1,1,7,1,lessonlearned1,https://lessonlearned1.com
+108,1,1,8,1,project1,https://project1.com
+108,1,1,9,1,quickguide1,https://quickguide1.com
+108,1,1,10,1,finalreport1,https://finalreport1.com
+109,1,1,1,1,PlaceHolder, 
+109,1,1,3,1,Capital Dredging,main.html?contentId=301
+109,1,1,4,1,E&E Services,main.html?contentId=401
+109,1,1,11,1,expert1,https://expert1.com
+109,1,1,6,1,mainpdf,PlaceHolders/Placeholderpdf.pdf
+109,1,1,7,1,lessonlearned1,https://lessonlearned1.com
+109,1,1,8,1,project1,https://project1.com
+109,1,1,9,1,quickguide1,https://quickguide1.com
+109,1,1,10,1,finalreport1,https://finalreport1.com
+110,1,1,1,1,PlaceHolder, 
+110,1,1,3,1,Capital Dredging,main.html?contentId=301
+110,1,1,4,1,E&E Services,main.html?contentId=401
+110,1,1,11,1,expert1,https://expert1.com
+110,1,1,6,1,mainpdf,PlaceHolders/Placeholderpdf.pdf
+110,1,1,7,1,lessonlearned1,https://lessonlearned1.com
+110,1,1,8,1,project1,https://project1.com
+110,1,1,9,1,quickguide1,https://quickguide1.com
+110,1,1,10,1,finalreport1,https://finalreport1.com
+111,1,1,1,1,PlaceHolder, 
+111,1,1,3,1,Capital Dredging,main.html?contentId=301
+111,1,1,4,1,E&E Services,main.html?contentId=401
+111,1,1,11,1,expert1,https://expert1.com
+111,1,1,6,1,mainpdf,PlaceHolders/Placeholderpdf.pdf
+111,1,1,7,1,lessonlearned1,https://lessonlearned1.com
+111,1,1,8,1,project1,https://project1.com
+111,1,1,9,1,quickguide1,https://quickguide1.com
+111,1,1,10,1,finalreport1,https://finalreport1.com
+112,1,1,1,1,PlaceHolder, 
+112,1,1,3,1,Capital Dredging,main.html?contentId=301
+112,1,1,4,1,E&E Services,main.html?contentId=401
+112,1,1,11,1,expert1,https://expert1.com
+112,1,1,6,1,mainpdf,PlaceHolders/Placeholderpdf.pdf
+112,1,1,7,1,lessonlearned1,https://lessonlearned1.com
+112,1,1,8,1,project1,https://project1.com
+112,1,1,9,1,quickguide1,https://quickguide1.com
+112,1,1,10,1,finalreport1,https://finalreport1.com
+113,1,1,1,1,PlaceHolder, 
+113,1,1,3,1,Capital Dredging,main.html?contentId=301
+113,1,1,4,1,E&E Services,main.html?contentId=401
+113,1,1,11,1,expert1,https://expert1.com
+113,1,1,6,1,mainpdf,PlaceHolders/Placeholderpdf.pdf
+113,1,1,7,1,lessonlearned1,https://lessonlearned1.com
+113,1,1,8,1,project1,https://project1.com
+113,1,1,9,1,quickguide1,https://quickguide1.com
+113,1,1,10,1,finalreport1,https://finalreport1.com
+114,1,1,1,1,PlaceHolder, 
+114,1,1,3,1,Capital Dredging,main.html?contentId=301
+114,1,1,4,1,E&E Services,main.html?contentId=401
+114,1,1,11,1,expert1,https://expert1.com
+114,1,1,6,1,mainpdf,PlaceHolders/Placeholderpdf.pdf
+114,1,1,7,1,lessonlearned1,https://lessonlearned1.com
+114,1,1,8,1,project1,https://project1.com
+114,1,1,9,1,quickguide1,https://quickguide1.com
+114,1,1,10,1,finalreport1,https://finalreport1.com
+115,1,1,1,1,PlaceHolder, 
+115,1,1,3,1,Capital Dredging,main.html?contentId=301
+115,1,1,4,1,E&E Services,main.html?contentId=401
+115,1,1,11,1,expert1,https://expert1.com
+115,1,1,6,1,mainpdf,PlaceHolders/Placeholderpdf.pdf
+115,1,1,7,1,lessonlearned1,https://lessonlearned1.com
+115,1,1,8,1,project1,https://project1.com
+115,1,1,9,1,quickguide1,https://quickguide1.com
+115,1,1,10,1,finalreport1,https://finalreport1.com
+116,1,1,1,1,PlaceHolder, 
+116,1,1,3,1,Capital Dredging,main.html?contentId=301
+116,1,1,4,1,E&E Services,main.html?contentId=401
+116,1,1,11,1,expert1,https://expert1.com
+116,1,1,6,1,mainpdf,PlaceHolders/Placeholderpdf.pdf
+116,1,1,7,1,lessonlearned1,https://lessonlearned1.com
+116,1,1,8,1,project1,https://project1.com
+116,1,1,9,1,quickguide1,https://quickguide1.com
+116,1,1,10,1,finalreport1,https://finalreport1.com
+117,1,1,1,1,PlaceHolder, 
+117,1,1,3,1,Capital Dredging,main.html?contentId=301
+117,1,1,4,1,E&E Services,main.html?contentId=401
+117,1,1,11,1,expert1,https://expert1.com
+117,1,1,6,1,mainpdf,PlaceHolders/Placeholderpdf.pdf
+117,1,1,7,1,lessonlearned1,https://lessonlearned1.com
+117,1,1,8,1,project1,https://project1.com
+117,1,1,9,1,quickguide1,https://quickguide1.com
+117,1,1,10,1,finalreport1,https://finalreport1.com
 200,2,2,1,1,Nexus, 
 200,2,2,11,1,expert1,https://expert1.com
 200,2,2,11,2,expert2,https://expert2.com
@@ -254,7 +361,6 @@ contentId,pageType,templateId,objectId,Nr,name,link
 208,2,2,11,4,expert4,https://expert4.com
 208,2,2,11,5,expert5,https://expert5.com
 208,2,2,6,1,mainpdf,PlaceHolders/Leaflet_Nexus.pdf
-################################################ Pagetype 3 (Workmodules)
 301,3,1,1,1,Capital Dredging,main.html?contentId=301
 301,1,1,4,1,E&E Services,main.html?contentId=401
 301,1,1,4,2,Survey Services,main.html?contentId=402
