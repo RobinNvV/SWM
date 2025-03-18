@@ -5,11 +5,17 @@ $(document).ready(function(){
   }, 100); // Adjust the delay as needed
 
   // Listen for the popstate event to handle back button navigation
-  window.addEventListener('popstate', function(event) {
-    updateCurrentPageBreadcrumb();
-    showBreadCrumb();
-  });
+  // window.addEventListener('popstate', function(event) {
+  //   updateCurrentPageBreadcrumb();
+  //   showBreadCrumb();
+  // });
 });
+
+window.addEventListener('DOMContentLoaded', function(event) {
+  this.setTimeout(function(){
+    updateCurrentPageBreadcrumb();
+    showBreadCrumb();})
+})
 
 function updateCurrentPageBreadcrumb() {
   if (typeof (Storage) != "undefined") {
