@@ -49,6 +49,8 @@ document.getElementById('search-bar').addEventListener('keyup', function() {
     return acc;
   }, {});
 
+  console.log(filteredData)
+
   generateModuleList(filteredData);
 });
 
@@ -99,3 +101,4 @@ document.querySelectorAll('.js-module-preview').forEach((div) => {
 });
 
 loadCSV('moduledata.csv', loadContent);
+

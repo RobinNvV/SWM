@@ -54,7 +54,7 @@ contentId,pageType,templateId,objectId,Nr,name,link
 102,1,1,11,3,expert3,https://expert3.com
 102,1,1,11,4,expert4,https://expert4.com
 102,1,1,11,5,expert5,https://expert5.com
-102,1,1,6,1,mainpdf,main.html?contentId=102
+102,1,1,6,1,mainpdf,
 102,1,1,7,1,lessonlearned1,https://lessonlearned1.com
 102,1,1,7,2,lessonlearned2,https://lessonlearned2.com
 102,1,1,7,3,lessonlearned3,https://lessonlearned3.com
@@ -92,7 +92,7 @@ contentId,pageType,templateId,objectId,Nr,name,link
 103,1,1,11,3,expert3,https://expert3.com
 103,1,1,11,4,expert4,https://expert4.com
 103,1,1,11,5,expert5,https://expert5.com
-103,1,1,6,1,mainpdf,https://pdf.com
+103,1,1,6,1,mainpdf,
 103,1,1,7,1,lessonlearned1,https://lessonlearned1.com
 103,1,1,7,2,lessonlearned2,https://lessonlearned2.com
 103,1,1,7,3,lessonlearned3,https://lessonlearned3.com
@@ -130,7 +130,7 @@ contentId,pageType,templateId,objectId,Nr,name,link
 104,1,1,11,3,expert3,https://expert3.com
 104,1,1,11,4,expert4,https://expert4.com
 104,1,1,11,5,expert5,https://expert5.com
-104,1,1,6,1,mainpdf,https://pdf.com
+104,1,1,6,1,mainpdf,
 104,1,1,7,1,lessonlearned1,https://lessonlearned1.com
 104,1,1,7,2,lessonlearned2,https://lessonlearned2.com
 104,1,1,7,3,lessonlearned3,https://lessonlearned3.com
