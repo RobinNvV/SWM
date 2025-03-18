@@ -58,50 +58,54 @@ function loadTemplate(templateId, contentData) {
     } else {
         console.error('Template not found for templateId:', templateId);
     }
-  }
-  
-  function insertContent(contentData) {
-    contentData.forEach(item => {
-        const elements = document.querySelectorAll(`[data-object-id="${item.objectId}"]`);
+}
 
-        if (elements.length) {
-            elements.forEach(element => {
-                if (item.objectId == "6") {
+function insertContent(contentData) {
+    contentData.forEach(item => {
+    const elements = document.querySelectorAll(`[data-object-id="${item.objectId}"]`);
+
+    if (elements.length) {
+        elements.forEach(element => {
+            if (item.objectId == "6") {
+                if (item.link) {
+                    console.log('link', item.link);
                     element.innerHTML += `
                     <object data="${item.link}#toolbar=0&navpanes=0&scrollbar=0" type="application/pdf" width="100%" height="500px">
                     <p>Unable to display PDF file. <a href="${item.link}">Download</a> instead.</p>
                     </object>
-                    `
+                    `;
                 } else {
-
-                    if (element.tagName === 'UL') {
-                        element.innerHTML += `
-                        <li><a href="${item.link}">
-                            ${item.name}
-                        </a></li>
+                    element.innerHTML += `
+                    <p>No link provided.</p>
                     `;
-                    } else {
-                        element.innerHTML += `
-                        <a href="${item.link}">
-                            <p>${item.name}</p>
-                        </a>
-                    `;
-                    }
                 }
+            }  else {
 
-            })
-
-            if (item.objectId == "1") {
-              document.title = item.name
+                if (element.tagName === 'UL') {
+                    element.innerHTML += `
+                    <li><a href="${item.link}">
+                        ${item.name}
+                    </a></li>
+                `;
+                } else {
+                    element.innerHTML += `
+                    <a href="${item.link}">
+                        <p>${item.name}</p>
+                    </a>
+                `;
+                }
             }
-        } else {
-            console.error(`Element with data-object-id="${item.objectId}" not found.`);
+
+        })
+
+        if (item.objectId == "1") {
+            document.title = item.name
         }
+    } else {
+        console.error(`Element with data-object-id="${item.objectId}" not found.`);
+    }
     });
-
-
-
-  }
+}
 
   
 // // Load and populate the template
