@@ -65,9 +65,12 @@ function generateModuleList(groupedData){
       const authorRows = pageInfo.filter(info => info.objectId === '11');
 
       const title = titleRow ? titleRow.name : 'Unknown Title';
+      let link = titleRow ? titleRow.link: 'No Link';
       const authors = authorRows.map(authorRow => authorRow.name).join(', ');
-
-      modulesHTML += `<a class="nav-link" href="main.html?contentId=${contentId}">
+      if  (link === '') {
+        link = `main.html?contentId=${contentId}`
+      }
+      modulesHTML += `<a class="nav-link" href="${link}">
       <div class="div-module-preview js-module-preview"
       data-module-name="${title}">
           <div class="div-module-title">
