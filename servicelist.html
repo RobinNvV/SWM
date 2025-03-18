@@ -1,47 +1,102 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <title>
-      Services
-    </title>
-    <link rel="stylesheet" href="styles/shared/general.css">
-    <link rel="stylesheet" href="styles/servicepreview.css">
-    <link rel="stylesheet" href="styles/shared/header.css">
-    <link rel="stylesheet" href="styles/shared/sidebar.css">
-    <link rel="stylesheet" href="styles/shared/collapsible.css">
+import { updateSidebar } from "./general.js";
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.3.0/papaparse.min.js"></script>
+let originalGroupedData = {};
 
 
-  </head>
+function loadCSV(file, callback) {
+  Papa.parse(file, {
+    download: true,
+    header: true,
+    complete: function(results) {
+      const data = results.data;
+      const groupedData = data.reduce((acc, item) => {
+        if (!acc[item.contentId]) {
+          acc[item.contentId] = [];
+        }
+        acc[item.contentId].push(item);
+        return acc;
+      }, {});
+      originalGroupedData = groupedData;
+      callback(groupedData);
+    }
+  });
+}
 
-  <body>
-    <div class="div-header">
-    </div>
+function loadContent(groupedData){
+  generateModuleList(groupedData)
 
-    <div class="div-sidebar">
-    </div>
+  document.querySelector('.text-module-title').innerHTML = document.title
 
-    <div id="div-service-grid" class="js-service-grid">
-    </div>
-  
+  updateSidebar()
 
-    <!-- Load Header before Sidebar -->
-    <script type="module" src="scripts/header.js"></script>
-    <script type="module" src="scripts/sidebar.js"></script>
+}
 
-    <script type="module" src="scripts/servicelist.js"></script>
+document.getElementById('search-bar').addEventListener('keyup', function() {
+  let input = document.getElementById('search-bar').value.toLowerCase();
 
-
-    <script type="module" src="scripts/collapsible.js"></script>
-    <script type="module" src="scripts/search.js"></script>
-
-    <script type="module" src="scripts/interpagenav.js"></script>
-
+  let filteredData = Object.keys(originalGroupedData).reduce((acc, contentId) => {
+    const pageInfo = originalGroupedData[contentId];
     
+    // Check if any field in the pageInfo array contains the input
+    const matches = pageInfo.some(info => {
+      return Object.values(info).some(value => 
+        typeof value === 'string' && value.toLowerCase().includes(input)
+      );
+    });
+
+    if (matches) {
+      acc[contentId] = pageInfo;
+    }
+
+    return acc;
+  }, {});
+
+  generateModuleList(filteredData);
+});
 
 
-  </body>
-</html>
+function generateModuleList(groupedData){
+
+  console.log(groupedData)
+
+  let modulesHTML = '';
+
+  Object.keys(groupedData).forEach(contentId => {
+
+    const pageInfo = groupedData[contentId];
+    if (pageInfo[0].pageType === "4") {
+      const titleRow = pageInfo.find(info => info.objectId === '1');
+      const authorRows = pageInfo.filter(info => info.objectId === '11');
+  
+      const title = titleRow ? titleRow.name : 'Unknown Title';
+      console.log(titleRow.link)
+      let link = titleRow ? titleRow.link: 'No Link';
+      const authors = authorRows.map(authorRow => authorRow.name).join(', ');
+      if  (link === '') {
+        link = `main.html?contentId=${contentId}`
+      }
+      
+      modulesHTML += `<a class="nav-link" href="${link}">
+      <div class="div-service-preview js-service-preview"
+      data-service-name="${title}">
+          <div class="div-service-title">
+            <p class="service-title">
+              ${title}
+            </p>
+          </div>
+      
+            <div class="div-service-text">
+              <p class="service-author">
+                Author(s): ${authors}
+              </p>
+            </div>
+        </div>
+      </a>`;
+    }
+
+
+    });
+  document.querySelector('.js-service-grid').innerHTML = modulesHTML;
+}
+
+loadCSV('moduledata.csv', loadContent)
