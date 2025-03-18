@@ -28,7 +28,9 @@ function loadHeader() {
         </div>
         <ul class="ul-breadcrumb">
         </ul>
+        <!--
         <img class="hamburger-menu js-info-icon" src="icons/hamburger-menu.svg">
+        -->
       </div>`
 
   document.querySelector('.div-header').innerHTML = headerHTML
