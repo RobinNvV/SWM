@@ -67,19 +67,12 @@ function insertContent(contentData) {
     if (elements.length) {
         elements.forEach(element => {
             if (item.objectId == "6") {
-                if (item.link) {
-                    console.log('link', item.link);
-                    element.innerHTML += `
-                    <object data="${item.link}#toolbar=0&navpanes=0&scrollbar=0" type="application/pdf" width="100%" height="500px">
-                    <p>Unable to display PDF file. <a href="${item.link}">Download</a> instead.</p>
-                    </object>
-                    `;
-                } else {
-                    element.innerHTML += `
-                    <p>No link provided.</p>
-                    `;
-                }
-            }  else {
+                element.innerHTML += `
+                <object data="${item.link}#toolbar=0&navpanes=0&scrollbar=0" type="application/pdf" width="100%" height="500px">
+                <p>Unable to display PDF file. <a href="${item.link}">Download</a> instead.</p>
+                </object>
+                `
+            } else {
 
                 if (element.tagName === 'UL') {
                     element.innerHTML += `
