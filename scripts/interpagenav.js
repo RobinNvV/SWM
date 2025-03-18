@@ -41,11 +41,11 @@ function updateCurrentPageBreadcrumb() {
       }
     } else {
       // Set predefined breadcrumbs for other pages
-      if (window.location.pathname.includes('home.html')) {
-        sessionStorage.breadcrumb = "<a href='home.html'>Home</a>"
+      if (window.location.pathname.includes('index.html')) {
+        sessionStorage.breadcrumb = "<a href='index.html'>Home</a>"
       }
       else {
-        sessionStorage.breadcrumb = "<a href='home.html'>Home</a> > <a href='" + currentPageLink + "'>" + currentPage + "</a>";
+        sessionStorage.breadcrumb = "<a href='index.html'>Home</a> > <a href='" + currentPageLink + "'>" + currentPage + "</a>";
       }
     }
   }
