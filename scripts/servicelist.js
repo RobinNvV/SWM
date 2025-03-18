@@ -69,9 +69,14 @@ function generateModuleList(groupedData){
       const authorRows = pageInfo.filter(info => info.objectId === '11');
   
       const title = titleRow ? titleRow.name : 'Unknown Title';
+      console.log(titleRow.link)
+      let link = titleRow ? titleRow.link: 'No Link';
       const authors = authorRows.map(authorRow => authorRow.name).join(', ');
+      if  (link === '') {
+        link = `main.html?contentId=${contentId}`
+      }
       
-      modulesHTML += `<a class="nav-link" href="main.html?contentId=${contentId}">
+      modulesHTML += `<a class="nav-link" href="${link}">
       <div class="div-service-preview js-service-preview"
       data-service-name="${title}">
           <div class="div-service-title">
@@ -93,12 +98,5 @@ function generateModuleList(groupedData){
     });
   document.querySelector('.js-service-grid').innerHTML = modulesHTML;
 }
-
-
-document.querySelectorAll('.js-service-preview').forEach((div) => {
-    div.addEventListener('click', () => {
-      console.log(div.dataset)
-    });
-  });
 
 loadCSV('moduledata.csv', loadContent)
