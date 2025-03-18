@@ -42,9 +42,11 @@ function updateCurrentPageBreadcrumb() {
     } else {
       // Set predefined breadcrumbs for other pages
       if (window.location.pathname.includes('index.html')) {
+        console.log('indexhtml 1')
         sessionStorage.breadcrumb = "<a href='index.html'>Home</a>"
       }
       else {
+        console.log('indexhtml 2')
         sessionStorage.breadcrumb = "<a href='index.html'>Home</a> > <a href='" + currentPageLink + "'>" + currentPage + "</a>";
       }
     }
