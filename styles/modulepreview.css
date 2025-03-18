@@ -42,6 +42,8 @@ a {
 
   transition: all ease-in-out 200ms;
   -webkit-transition: all ease-in-out 200ms;
+
+  overflow: scroll;
 }
 
 @media (max-width:800px) {

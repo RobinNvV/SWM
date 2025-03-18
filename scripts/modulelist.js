@@ -49,8 +49,6 @@ document.getElementById('search-bar').addEventListener('keyup', function() {
     return acc;
   }, {});
 
-  console.log(filteredData)
-
   generateModuleList(filteredData);
 });
 
